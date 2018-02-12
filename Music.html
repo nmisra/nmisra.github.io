@@ -1,6 +1,25 @@
  <!DOCTYPE html>
 <html>
-<title>Vaishnavi Misra Dance and Music</title>
+ <!-- Header -->
+ 
+ <!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+   <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="index.html" class="w3-bar-item w3-button">Home</a> 
+      <a href="Dance.html" class="w3-bar-item w3-button w3-light-grey">Dance</a> 
+     <!-- <a href="Music.html" class="w3-bar-item w3-button">Music</a> -->
+      <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    </div>
+  </div>
+ 
+<header class="w3-panel w3-center w3-opacity" style="padding:50px 16px">
+  <h1 class="w3-xlarge">Vaishnavi Misra Music Classes</h1>
+  </header>
+
+
+ <title>Vaishnavi Misra Dance and Music</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,27 +28,91 @@
 <style>
 body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
-.w3-row-padding img {margin-bottom: 12px}
+.w3-row-padding img {margin-bottom: 6px}
 </style>
 <body>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-   <div class="w3-padding-32">
-    <div class="w3-bar w3-border">
-      <a href="index.html" class="w3-bar-item w3-button">Home</a> 
-      <a href="Dance.html" class="w3-bar-item w3-button w3-light-grey">Dance</a>
-      <a href="Music.html" class="w3-bar-item w3-button">Music</a>
-      <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small">Contact</a>
-    </div>
-  </div>
-</header>
  
-<!-- Header -->
-<header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-  <h1 class="w3-xlarge">DANCE and MUSIC Artist</h1>
-  <h1>Vaishnavi Misra Music Classes </h1>
+
+ 
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
   
-  
-</header>
+  body {
+    background-color: lightgreen;
+    font-family: Arial;}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+
+ <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Pleasanton')">Pleasanton</button>
+  <button class="tablinks" onclick="openCity(event, 'San Ramon')">San Ramon</button>
+  <button class="tablinks" onclick="openCity(event, 'Dublin')">Dublin</button>
+</div>
+
+<div id="Pleasanton" class="tabcontent">
+  <h3>Pleasanton</h3>
+  <p>Pleasanton is a great city in East Bay in Northern California.</p>
+</div>
+
+<div id="San Ramon" class="tabcontent">
+  <h3>San Ramon</h3>
+  <p>San Ramon is a great city where we have dance classes.</p> 
+</div>
+
+<div id="Dublin" class="tabcontent">
+  <h3>Dublin</h3>
+  <p>Dublin is in between San Ramon and Pleasanton. Its a great active city.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i]
+          .className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+ 
+ 
+
